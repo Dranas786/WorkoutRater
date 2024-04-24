@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export function Navbar() {
   return (
-    <NavbarBs className="bg-white shadow-sm mb-3">
+    <NavbarBs sticky="top" className="bg-white shadow-sm mb-3">
       <Container>
         <Nav className="me-auto">
           <Nav.Link to={"/"} as={NavLink}>
@@ -37,6 +37,7 @@ export function Navbar() {
               position: "absolute",
               bottom: 0,
               right: 0,
+              transform: "translate(25%, 25%)",
             }}
           >
             3
